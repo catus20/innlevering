@@ -1,0 +1,55 @@
+/* Generell stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+#klokke-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#tid, #dato {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+#ikon {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+/* Dag-tema */
+.dag {
+    background: linear-gradient(135deg, #87ceeb, #f0e68c);
+    color: #2c3e50;
+}
+
+/* Natt-tema */
+.natt {
+    background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+    color: #000; /* Svart tekst */
+}
+
+/* Små animasjonar */
+#ikon {
+    animation: svev 2s infinite ease-in-out;
+}
+
+@keyframes svev {
+    0%, 100% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+}
